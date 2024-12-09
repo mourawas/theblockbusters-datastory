@@ -1,5 +1,5 @@
 ---
-layout: home
+layout: page
 title: The recipe for a successful movie
 ---
 
