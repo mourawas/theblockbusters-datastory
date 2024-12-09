@@ -31,7 +31,7 @@ html {
 }
 
 body {
-  font-family: 'Times New Roman', var(--body-font);
+  font-family: "Comic Sans MS", "Comic Sans", cursive;
   font-size: 1.125rem;
   text-align: justify;
   color: var(--text-col);
