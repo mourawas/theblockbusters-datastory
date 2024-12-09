@@ -19,8 +19,8 @@ layout: null
   --footer-hover-col: {{ site.footer-hover-col | default: "#0085A1" }};
 
   /* common CSS variables */
-  --body-font: "Comic Sans MS", "Comic Sans", cursive;
-  --header-font: "Comic Sans MS", "Comic Sans", cursive;
+  --body-font: "Comic Sans MS", "Comic Sans", sans-serif;
+  --header-font: "Comic Sans MS", "Comic Sans", sans-serif;
   --mid-col: #808080;
 }
 
@@ -31,7 +31,7 @@ html {
 }
 
 body {
-  font-family: "Comic Sans MS", "Comic Sans", cursive;
+  font-family: "Comic Sans MS", "Comic Sans", sans-serif;
   font-size: 1.125rem;
   text-align: justify;
   color: var(--text-col);
