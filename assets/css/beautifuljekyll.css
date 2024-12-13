@@ -19,8 +19,8 @@ layout: null
   --footer-hover-col: {{ site.footer-hover-col | default: "#0085A1" }};
 
   /* common CSS variables */
-  --body-font: "Comic Sans MS", "Comic Sans", sans-serif;
-  --header-font: "Comic Sans MS", "Comic Sans", sans-serif;
+  --body-font: "Calibri Corpo", "Calibri", sans-serif;
+  --header-font: "Calibri Corpo", "Calibri", sans-serif;
   --mid-col: #808080;
 }
 
