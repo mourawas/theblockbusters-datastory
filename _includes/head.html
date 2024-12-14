@@ -24,7 +24,7 @@
     {%- if page.share-description -%}
       {{ page.share-description | strip_html | xml_escape }}
     {%- elsif page.subtitle -%}
-      {{ Stefano Ferioli, Francesco Bellotto, Luca Pisoni,<br>Mouhamad Rawas, Hugo Lagergren }}
+      {{ page.subtitle | strip_html | xml_escape }}
     {%- else -%}
       {%- assign excerpt_length = site.excerpt_length | default: 50 -%}
       {{ page.content | strip_html | xml_escape | truncatewords: excerpt_length | strip }}
