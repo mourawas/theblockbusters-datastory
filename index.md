@@ -2,7 +2,7 @@
 layout: page
 title: The recipe for a successful movie
 subtitle: |
-  Stefano Ferioli, Francesco Bellotto, Luca Pisoni,\
+  Stefano Ferioli, Francesco Bellotto, Luca Pisoni, \linebreak
   Mouhamad Rawas, Hugo Lagergren
 cover-img: /assets/img/bold_movie_success.jpg
 ---
