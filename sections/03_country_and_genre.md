@@ -70,3 +70,12 @@ This finding suggests that Hollywood’s dominance isn’t just about having lar
 <div style="margin-top: 20px;">
     {% include plots/03_genre_avg.html %}
 </div>
+
+<div style="display: flex; align-items: flex-start">
+    <div style="flex: 1; margin-right: 10px;">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+    </div>
+    <div style="flex: 1;">
+        {% include plots/03_genre_ols.html %}
+    </div>
+</div>
