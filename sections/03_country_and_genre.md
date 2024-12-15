@@ -55,10 +55,18 @@ Propensity score matching helps us compare movies from the United States to thos
 		{% include plots/03_country_propensity_bar.html %}
 	</div>
     <div style="flex: 1;">
-        After performing propensity score matching, we obtain a balanced dataset with 6504 movies, half produced in the USA and half produced elsewhere. Then, we perform a t-test comparing the average popularity of movies produced in the U.S. against those produced elsewhere. Strikingly, we find an exptremely low p-value, meaning that the two groups have indeed different mean. This means that, even after controlling for factors like budget, runtime, and genre, being produced in the United States really does give movies an edge. The bar plot here on the side visually illustrates this difference.
+        After performing propensity score matching, we obtain a balanced dataset with 6504 movies, half produced in the USA and half produced elsewhere. Then, we perform a t-test comparing the average popularity of movies produced in the U.S. against those produced abroad. Strikingly, we find an exptremely low p-value, meaning that the two groups have indeed different mean. This means that, even after controlling for factors like budget, runtime, and genre, being produced in the United States really does give movies an edge. The bar plot here on the side visually illustrates this difference.
     </div>
 </div>
 
 This finding suggests that Hollywood’s dominance isn’t just about having larger budgets or producing more movies. There is a real and measurable advantage for a movie in being produced in the United States of America.
 
 # Genres
+
+<div style="margin-top: -40px;">
+    {% include plots/03_genre_count_bar.html %}
+</div>
+
+<div style="margin-top: 20px;">
+    {% include plots/03_genre.html %}
+</div>
