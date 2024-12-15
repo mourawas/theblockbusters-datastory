@@ -21,8 +21,10 @@ author: TheBlockbusters
 
 navbar-links:
   Data sources:
-    - Beautiful Jekyll: "https://beautifuljekyll.com"
-    - Learn markdown: "https://www.markdowntutorial.com/"
+    - CMU Movie Summary Corpus: "https://www.cs.cmu.edu/~ark/personas/"
+    - IMDB: "https://www.imdb.com/"
+    - The Movie Database: "https://www.themoviedb.org/"
+    - Wikidata: "https://www.wikidata.org/"
 
 ################
 # --- Logo --- #
