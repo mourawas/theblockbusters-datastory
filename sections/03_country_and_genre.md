@@ -55,10 +55,27 @@ Propensity score matching helps us compare movies from the United States to thos
 		{% include plots/03_country_propensity_bar.html %}
 	</div>
     <div style="flex: 1;">
-        After performing propensity score matching, we obtain a balanced dataset with 6504 movies, half produced in the USA and half produced elsewhere. Then, we perform a t-test comparing the average popularity of movies produced in the U.S. against those produced elsewhere. Strikingly, we find an exptremely low p-value, meaning that the two groups have indeed different mean. This means that, even after controlling for factors like budget, runtime, and genre, being produced in the United States really does give movies an edge. The bar plot here on the side visually illustrates this difference.
+        After performing propensity score matching, we obtain a balanced dataset with 6504 movies, half produced in the USA and half produced elsewhere. Then, we perform a t-test comparing the average popularity of movies produced in the U.S. against those produced abroad. Strikingly, we find an exptremely low p-value, meaning that the two groups have indeed different mean. This means that, even after controlling for factors like budget, runtime, and genre, being produced in the United States really does give movies an edge. The bar plot here on the side visually illustrates this difference.
     </div>
 </div>
 
 This finding suggests that Hollywood’s dominance isn’t just about having larger budgets or producing more movies. There is a real and measurable advantage for a movie in being produced in the United States of America.
 
 # Genres
+
+<div style="margin-top: -40px;">
+    {% include plots/03_genre_count_bar.html %}
+</div>
+
+<div style="margin-top: 20px;">
+    {% include plots/03_genre_avg.html %}
+</div>
+
+<div style="display: flex; align-items: flex-start">
+    <div style="flex: 1; margin-right: 10px;">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+    </div>
+    <div style="flex: 1;">
+        {% include plots/03_genre_ols.html %}
+    </div>
+</div>
