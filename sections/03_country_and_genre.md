@@ -68,5 +68,5 @@ This finding suggests that Hollywood’s dominance isn’t just about having lar
 </div>
 
 <div style="margin-top: 20px;">
-    {% include plots/03_genre.html %}
+    {% include plots/03_genre_avg.html %}
 </div>
