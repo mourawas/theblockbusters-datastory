@@ -63,6 +63,16 @@ This finding suggests that Hollywood’s dominance isn’t just about having lar
 
 # Genres
 
+Now that we’ve seen how a movie’s country of origin can influence its success, we shift our focus to something a little closer to the movies themselves: genres. However, unlike a movies' countries of origin, which are relatively straightforward, genre classification can be highly subjective and inconsistent. While the genres of a movie can be easily found only, the lines between genres can sometimes get blurry.
+
+For instance, a film with intense suspense and a detective storyline might be labeled as both a thriller and a mystery. Similarly, a film packed with high-energy car chases and tense shootouts could be labeled action, but if it includes moments of humor, it might also be classified as comedy. Even stylistic choices can add to the confusion. For example, some sources consider black-and-white a genre on itself, while others treat it as nothing more than a stylistic descriptor. These inconsistencies highlight how fluid and context-dependent genre classifications can be.
+
+To address this complexity, while keeping the analysis manageable, we focused on 19 core genres that cover the vast majority of movies in our dataset. Any additional genres were either mapped to one or more of these core categories or excluded for clarity. 
+
+Now that we’ve set the stage, let’s take a closer look at the numbers. Which genres dominate the industry, and which ones punch above their weight when it comes to audience reception?
+
+Examining the distribution of movies across genres, it’s clear that certain genres dominate the landscape. Drama takes the lead, appearing in over half of the movies in our dataset with more than 45 thoudands entries. Following behind Drama are other popular genres like comedy, romance, and action, all of which are widely represented. In contrast, genres such as sport, western, and biography are much less common, representing only a small fraction of the overall dataset. The plot below helps illustrate this phenomenon.
+
 <div style="margin-top: -40px;">
     {% include plots/03_genre_count_bar.html %}
 </div>
@@ -71,11 +81,24 @@ This finding suggests that Hollywood’s dominance isn’t just about having lar
     {% include plots/03_genre_avg.html %}
 </div>
 
+Next, we turn to the average popularity of movies across genres, as represented in the plot here above. Surprisingly (or maybe not), sci-fi and fantasy top the charts, taking the first and second spots. This suggests that while sci-fi and fantasy movies may not be as numerous as dramas or comedies, they tend to attract a large audience when they are produced.
+
+Both sci-fi and fantasy benefit from their inherent ability to transport viewers to imaginative and otherworldly settings. These genres often feature visually stunning effects, epic storytelling, and deeply engaging narratives that leave a lasting impact. Beyond that, both genres tend to cultivate dedicated loyal fan communities that eagerly anticipate and support new releases, whether they are standalone films or parts of larger franchises.
+
+On the other hand, more common genres like drama and romance land in the middle of the pack when it comes to average popularity. While these genres are widely produced and feature prominently in the industry, their sheer volume can lead to mixed results. For every standout hit that resonates with audiences, there are many others that fail to leave a lasting impression. The oversaturation of dramas and romances makes it harder for individual films to stand out, and their more grounded, everyday narratives may not always evoke the same excitement as the fantastic worlds of sci-fi and fantasy.
+
+Interestingly, genres like horror and thriller follow closely behind the top performers, thanks to their ability to deliver intense emotions, whether it’s fear, suspense, or adrenaline. At the other end of the spectrum, documentary and music rank the lowest in average popularity, as they tend to attract niche audiences rather than broad, international interest.
+
 <div style="display: flex; align-items: flex-start">
     <div style="flex: 1; margin-right: 10px;">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        To further explore the relationship between genres and movie success, we analyze the OLS coefficients for each genre. These coefficients measure the impact of belonging to a specific genre on a movie's popularity, holding other factors constant.<br><br>
+
+		The results are broadly consistent with the average popularity rankings, reaffirming the strong performance of genres like thriller, horror, sci-fi, and fantasy, all of which remain at the top. However, the order shifts slightly, largely due to partial collinearity due to the fact that movies often belong to multiple genres.<br><br>
+
+		Despite this overlap, the analysis underscores the influence of genres that evoke intensity and excitement, such as thrillers and horror, or that transport audiences to imaginative worlds, as seen with sci-fi and fantasy. Meanwhile, genres like documentary and music remain at the bottom, reflecting their more niche appeal and limited international reach.<br><br>
     </div>
     <div style="flex: 1;">
         {% include plots/03_genre_ols.html %}
     </div>
 </div>
+
