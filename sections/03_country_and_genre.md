@@ -30,7 +30,7 @@ What stands out the most here is the disconnect between volume and quality. If w
 
 <div style="display: flex; align-items: flex-start">
     <div style="flex: 1; margin-right: 10px;">
-        But lets dive deeped and analyze the OLS coefficients. <br><br>
+        But lets dive deeper and analyze the OLS coefficients. <br><br>
 		
 		At the top, Turkey takes the spotlight with the highest positive coefficient, showing that films from this country tend to perform exceptionally well. It’s a clear case of quality over quantity, as Turkey might not produce as many movies as the global giants, but the ones they do make really hit the mark. The United States follows closely behind, showing once again that Hollywood’s global influence remains unmatched.<br><br>
 
@@ -50,7 +50,14 @@ To answer this question, we turn to causal analysis techniques, which allow us t
 
 Propensity score matching helps us compare movies from the United States to those from other countries in a way that controls for confounding factors like budget, genre, and runtime. Essentially, PSM creates a "balanced dataset" where movies from the U.S. are matched with movies from other countries that have similar characteristics. For example, a big-budget Hollywood blockbuster would be matched to a similarly funded movie from another country. This ensures that any observed difference in popularity can be more confidently attributed to the country of origin, rather than other factors.
 
-After performing propensity score matching, we obtain a balanced dataset with 6504 movies, half produced in the USA and half produced elsewhere. Then, we perform a t-test comparing the average popularity of movies produced in the U.S. against those produced elsewhere. Strikingly, we find an exptremely low p-value, meaning that the two groups have indeed different mean. This means that, even after controlling for factors like budget, runtime, and genre, being produced in the United States really does give movies an edge. The bar plot here on the side visually illustrates this difference.
+<div style="display: flex; align-items: flex-start">
+    <div style="flex: 1; margin-right: 10px;">
+		{% include plots/03_country_propensity_bar.html %}
+	</div>
+    <div style="flex: 1;">
+        After performing propensity score matching, we obtain a balanced dataset with 6504 movies, half produced in the USA and half produced elsewhere. Then, we perform a t-test comparing the average popularity of movies produced in the U.S. against those produced elsewhere. Strikingly, we find an exptremely low p-value, meaning that the two groups have indeed different mean. This means that, even after controlling for factors like budget, runtime, and genre, being produced in the United States really does give movies an edge. The bar plot here on the side visually illustrates this difference.
+    </div>
+</div>
 
 This finding suggests that Hollywood’s dominance isn’t just about having larger budgets or producing more movies. There is a real and measurable advantage for a movie in being produced in the United States of America.
 
