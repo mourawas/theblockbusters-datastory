@@ -46,6 +46,12 @@ What stands out the most here is the disconnect between volume and quality. If w
 </div>
 These observations naturally raise an important question: What drives this success or struggle? Is it simply about where a film is produced, or are other factors-like budget, genre, and access to global markets-playing a larger role? For instance, does being produced in the United States inherently boost a movie's success, or is Hollywood’s dominance more a reflection of its unparalleled access to resources, talent, and distribution networks?
 
-We try to answer this question 
+To answer this question, we turn to causal analysis techniques, which allow us to move beyond correlations and uncover whether being from a specific country—like the United States—causes a movie to perform better. One key method we use is propensity score matching (PSM).
+
+Propensity score matching helps us compare movies from the United States to those from other countries in a way that controls for confounding factors like budget, genre, and runtime. Essentially, PSM creates a "balanced dataset" where movies from the U.S. are matched with movies from other countries that have similar characteristics. For example, a big-budget Hollywood blockbuster would be matched to a similarly funded movie from another country. This ensures that any observed difference in popularity can be more confidently attributed to the country of origin, rather than other factors.
+
+After performing propensity score matching, we obtain a balanced dataset with 6504 movies, half produced in the USA and half produced elsewhere. Then, we perform a t-test comparing the average popularity of movies produced in the U.S. against those produced elsewhere. Strikingly, we find an exptremely low p-value, meaning that the two groups have indeed different mean. This means that, even after controlling for factors like budget, runtime, and genre, being produced in the United States really does give movies an edge. The bar plot here on the side visually illustrates this difference.
+
+This finding suggests that Hollywood’s dominance isn’t just about having larger budgets or producing more movies. There is a real and measurable advantage for a movie in being produced in the United States of America.
 
 # Genres
