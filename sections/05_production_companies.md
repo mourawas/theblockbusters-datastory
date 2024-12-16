@@ -4,9 +4,6 @@ Next, we explore whether the production company influences the popularity of mov
 
 To visualize this relationship, we created a scatter plot. The x-axis represents the frequency (i.e., the number of movies produced by a company), while the y-axis shows the average popularity of each production company, calculated as the mean number of votes across all their movies.
 
-(Graph to be inserted here)
-
-# Observations
 From the scatter plot, there does not appear to be a clear or evident trend linking production frequency to average movie popularity. Production companies with higher frequencies do not consistently exhibit greater average popularity for their films. However, one notable observation is that the standard deviation of popularity narrows slightly as frequency increases. In other words, as production companies release more movies, the variability in their movies’ popularity tends to decrease. This suggests that more prolific production companies may produce movies with more consistent levels of popularity.
 
 Despite this subtle pattern, the result does not appear statistically significant. The absence of a strong trend suggests that the sheer number of movies produced by a company is not a major determinant of the average popularity of its films.
