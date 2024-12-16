@@ -23,11 +23,15 @@ By unpacking these metrics, we hope to better understand the dynamics of what ma
 
 The first step in our analysis was to transform the variables into their logarithmic forms. This was necessary because, when plotted, their distributions were highly skewed, making it difficult to draw meaningful insights.
 
-Once transformed, we performed several tests and discovered a correlation of 0.67 between the number of votes and revenues. This indicates a significant linear relationship between these two variables and suggests a potential solution to the problem of missing revenue values in our dataset. The strong correlation implies that as the number of ratings increases, the revenue of a movie tends to rise proportionally.
+DISPLAY SKEWED PLOT -> THEN TRANSFORMED PLOT
+
+Once transformed, we discovered a correlation of 0.67 between the number of votes and revenues. This indicates a significant linear relationship between these two variables and suggests a potential solution to the problem of missing revenue values in our dataset. The strong correlation implies that as the number of ratings increases, the revenue of a movie tends to rise proportionally.
+
+PLOT SCATTER PLOT (+ REGRESSION LINE)
 
 This finding aligns with intuition: the more ratings a movie receives, the greater its audience engagement and viewership, which directly contribute to its box office or streaming earnings. By analyzing these variables in their logarithmic forms, this relationship becomes even clearer and more mathematically robust, further supporting the validity of this approach.
 
-Given this correlation, we propose using a linear regression model with the number of ratings as the predictor variable to estimate missing revenue values. This approach capitalizes on the strong relationship between the two variables, enabling us to recover incomplete data. By filling in the gaps in revenue data, we can ensure a more comprehensive and accurate analysis of the factors driving a movie’s financial and overall success.
+Given this correlation, at first, we thought about using a linear regression model with the number of ratings as the predictor variable to estimate missing revenue values. This approach capitalizes on the strong relationship between the two variables, enabling us to recover incomplete data. By filling in the gaps in revenue data, we can ensure a more comprehensive and accurate analysis of the factors driving a movie’s financial and overall success. However, as the analysis shows, the forecast of the revenues is not necessary.
 
 
 #  The Analysis
@@ -48,14 +52,11 @@ Here’s what we found:
 
 - Number of votes and budget: There was a strong positive correlation here as well, with a Pearson correlation value of 0.62 and a p-value of 0.00, suggesting that higher-budget movies attract more viewers and thus receive more ratings.
 
-##### MAYBE WE CAN DISPLAY THE CORRELATION RESULTS WITHIN A TABLE
+#### GG PAIRS 
 
-# What The Results Tell Us
 The analysis confirms some key intuitions. For example, the strong link between votes and revenues suggests that popularity plays a major role in a movie’s financial success. ROI, however, stands out as a different kind of metric. Its weaker correlations with votes and revenues reflect the fact that it’s more about efficiency than scale—it measures how much value was created relative to the budget, rather than how much money was made overall.
 
 The negative correlation between ROI and budget is especially interesting. Smaller-budget films often achieve higher ROI percentages because they require less money to turn a profit. However, this doesn’t mean these films are more lucrative overall. High-budget movies, while less efficient in terms of ROI, tend to generate far larger absolute revenues and profits. This creates an intriguing dynamic: smaller films succeed by being efficient, while bigger productions succeed through scale.
-
-# Focusing on Popularity
 
 Since we have much more reliable and complete information about popularity, measured as the logarithm of the number of votes, we will prioritize this metric to determine a movie's success. Popularity reflects audience engagement and the reach of a film, making it a practical and robust measure for our analysis. Additionally, its strong correlations with revenue and budget reinforce its suitability as a central indicator of success.
 
