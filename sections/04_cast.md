@@ -50,14 +50,9 @@ Additionally, there are other notable collinearities among variables that aim to
 
 To address these issues and utilizing what we discovered using Pearson's coefficients, we train a OLS model only on the metrics: *cast_country_count*, *age_std*, *actor_fame_bool*, and *director_fame_bool*.
 
-The OLS coefficients plot reveals that the standard deviation in cast age (*age_std*) and the number of different nationalities (*cast_country_count*) have the strongest positive effects on movie popularity, highlighting the importance of multi-generational and international appeal. The presence of an experienced director (*director_fame_bool*) also contributes positively, while the effect of experienced actors (*actor_fame_bool*) appears to be low but consistent. Finally, the model's R² $R^2$ value of 0.107 indicates that while the cast alone does not fully explain movie success, these findings can still be usefull in a broader models that consider more aspects of movies.
-
-Actor fame metrics: The maximum number of appearances of actors is strongly related to the presence of experienced actors (a binary metric). Both emphasize the influence of prior experience but in slightly different ways.
-Director fame metrics: Similarly, the maximum number of prior movies directed correlates with the binary indicator for experienced directors.
-
 <div style="display: flex; align-items: flex-start">
     <div style="flex: 1; margin-right: 10px;">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        The OLS coefficients plot reveals that the standard deviation in cast age (*age_std*) and the number of different nationalities (*cast_country_count*) have the strongest positive effects on movie popularity, highlighting the importance of multi-generational and international appeal. The presence of an experienced director (*director_fame_bool*) also contributes positively, while the effect of experienced actors (*actor_fame_bool*) appears to be low but consistent. Finally, the model's R² value of 0.107 indicates that while the cast alone does not fully explain movie success, these findings can still be usefull in a broader models that consider more aspects of movies.
     </div>
     <div style="flex: 1;">
         {% include plots/04_cast_ols.html %}
