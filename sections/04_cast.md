@@ -34,8 +34,12 @@ To assess the impact of cast composition on a movie's success, we delve into thr
         {% include plots/04_cast_pearson.html %}
     </div>
 </div>
-directors shows a notable positive association, emphasizing the value of established talent in driving a movie's success. On the demographic side, the standard deviation of cast age stands out, indicating that a wider age range within the cast can increase a movie's appeal across generations. In contrast, metrics like the average age and gender proportion show weaker correlations, suggesting that their influence on success is relatively limited.
+<div style="margin-top: -40px;">
+    directors shows a notable positive association, emphasizing the value of established talent in driving a movie's success. On the demographic side, the standard deviation of cast age stands out, indicating that a wider age range within the cast can increase a movie's appeal across generations. In contrast, metrics like the average age and gender proportion show weaker correlations, suggesting that their influence on success is relatively limited.
+</div>
 
+
+Before creating a linear model, however, we have to check for colinearities among our metrics. To do so, we display the correlation matrix here below.
 
 <div style="display: flex; align-items: flex-start">
     <div style="flex: 1; margin-right: 10px;">
