@@ -25,7 +25,9 @@ To assess the impact of cast composition on a movie's success, we delve into thr
 
 <div style="display: flex; align-items: flex-start">
     <div style="flex: 1; margin-right: 10px;">
-        Having established these key metrics, we now proceed to quantify their influence on movie success. To achieve this, we compute the Pearson correlation between each metric and the popularity of the movies in our dataset. Pearson correlation provides a straightforward measure of the linear relationship between each cast composition factor and audience reception, allowing us to identify which aspects of the cast can be associated with success. The bar plot here on the side visually illustrates our results.
+        Having established these key metrics, we now proceed to quantify their influence on movie success. To achieve this, we compute the Pearson correlation between each metric and the popularity of the movies in our dataset. Pearson correlation provides a straightforward measure of the linear relationship between each cast composition factor and audience reception, allowing us to identify which aspects of the cast can be associated with success. The bar plot here on the side visually illustrates our results. <br><br>
+		
+		The results reveal that diversity metrics, particularly the number of different nationalities and the Shannon entropy of nationalities, exhibit strong positive correlations with movie popularity. This suggests that movies with more internationally diverse and balanced casts tend to resonate better with audiences. Additionally, the presence of experienced actors and directors shows a notable positive association, emphasizing the value of established talent in driving a movie's success. On the demographic side, the standard deviation of cast age stands out, indicating that a wider age range within the cast can increase a movie's appeal across generations. In contrast, metrics like the average age and gender proportion show weaker correlations, suggesting that their influence on success is relatively limited.
     </div>
     <div style="flex: 1;">
         {% include plots/04_cast_pearson.html %}
