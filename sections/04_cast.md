@@ -25,6 +25,17 @@ To assess the impact of cast composition on a movie's success, we delve into thr
 
 <div style="display: flex; align-items: flex-start">
     <div style="flex: 1; margin-right: 10px;">
+        Having established these key metrics, we now proceed to quantify their influence on movie success. To achieve this, we compute the Pearson correlation between each metric and the popularity of the movies in our dataset. Pearson correlation provides a straightforward measure of the linear relationship between each cast composition factor and audience reception, allowing us to identify which aspects of the cast can be associated with success. The bar plot here on the side visually illustrates our results.
+    </div>
+    <div style="flex: 1;">
+        {% include plots/04_cast_pearson.html %}
+    </div>
+</div>
+
+
+
+<div style="display: flex; align-items: flex-start">
+    <div style="flex: 1; margin-right: 10px;">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
     </div>
     <div style="flex: 1;">
@@ -32,14 +43,7 @@ To assess the impact of cast composition on a movie's success, we delve into thr
     </div>
 </div>
 
-<div style="display: flex; align-items: flex-start">
-    <div style="flex: 1; margin-right: 10px;">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-    </div>
-    <div style="flex: 1;">
-        {% include plots/04_cast_pearson.html %}
-    </div>
-</div>
+
 
 <div style="display: flex; justify-content: center; margin-top: -40px;">
     {% include plots/04_cast_stats_heatmap.html %}
