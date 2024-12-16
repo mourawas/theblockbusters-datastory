@@ -705,7 +705,7 @@ nav.top-nav-short-permanent ~ header > .intro-header.big-img {
 .intro-header.big-img .page-heading,
 .intro-header.big-img .post-heading {
   padding: 6.25rem 0;
-  color: #FFF;
+  color: #000;
   text-shadow: 1px 1px 3px #000;
 }
 .intro-header .page-heading h1 {
@@ -739,16 +739,6 @@ nav.top-nav-short-permanent ~ header > .intro-header.big-img {
 }
 .intro-header.big-img .post-heading .post-meta {
   color: #EEE;
-}
-
-.intro-header .page-heading { /* added */
-  text-align: center;
-  color: #FFFFFF;
-  text-shadow: 
-    -2px -2px 4px #000, 
-    2px -2px 4px #000, 
-    -2px 2px 4px #000, 
-    2px 2px 4px #000;
 }
 
 .intro-header.big-img .img-desc {
