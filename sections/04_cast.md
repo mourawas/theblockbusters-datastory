@@ -34,12 +34,11 @@ To assess the impact of cast composition on a movie's success, we delve into thr
         {% include plots/04_cast_pearson.html %}
     </div>
 </div>
-<div style="margin-top: -22px;">
+<div style="margin-top: -28px;">
     directors shows a notable positive association, emphasizing the value of established talent in driving a movie's success. On the demographic side, the standard deviation of cast age stands out, indicating that a wider age range within the cast can increase a movie's appeal across generations. In contrast, metrics like the average age and gender proportion show weaker correlations, suggesting that their influence on success is relatively limited.
 </div>
 
-
-Before creating a linear model, however, we have to check for colinearities among our metrics. 
+Before creating a linear model, however, we have to check for colinearities among our metrics. Collinearity occurs when two or more variables are highly correlated, which can distort the results of a linear regression
 
 <div style="display: flex; align-items: flex-start">
     <div style="flex: 1; margin-right: 10px;">
