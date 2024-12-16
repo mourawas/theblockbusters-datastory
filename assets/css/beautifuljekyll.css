@@ -740,6 +740,17 @@ nav.top-nav-short-permanent ~ header > .intro-header.big-img {
 .intro-header.big-img .post-heading .post-meta {
   color: #EEE;
 }
+
+.intro-header .page-heading { /* added */
+  text-align: center;
+  color: #FFFFFF;
+  text-shadow: 
+    -2px -2px 4px #000, 
+    2px -2px 4px #000, 
+    -2px 2px 4px #000, 
+    2px 2px 4px #000;
+}
+
 .intro-header.big-img .img-desc {
   background: rgba(30, 30, 30, 0.6);
   position: absolute;
