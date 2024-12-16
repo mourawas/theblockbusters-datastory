@@ -52,7 +52,7 @@ To address these issues and utilizing what we discovered using Pearson's coeffic
 
 <div style="display: flex; align-items: flex-start">
     <div style="flex: 1; margin-right: 10px;">
-        The OLS coefficients plot reveals that the standard deviation in cast age (*age_std*) and the number of different nationalities (*cast_country_count*) have the strongest positive effects on movie popularity, highlighting the importance of multi-generational and international appeal. The presence of an experienced director (*director_fame_bool*) also contributes positively, while the effect of experienced actors (*actor_fame_bool*) appears to be low but consistent. Finally, the model's R² value of 0.107 indicates that while the cast alone does not fully explain movie success, these findings can still be usefull in a broader models that consider more aspects of movies.
+        The OLS coefficients plot reveals that the standard deviation in cast age (<i>age_std</i>) and the number of different nationalities (<i>cast_country_count</i>) have the strongest positive effects on movie popularity, highlighting the importance of multi-generational and international appeal. The presence of an experienced director (<i>director_fame_bool</i>) also contributes positively, while the effect of experienced actors (<i>actor_fame_bool</i>) appears to be low but consistent. Finally, the model's R² value of 0.107 indicates that while the cast alone does not fully explain movie success, these findings can still be usefull in a broader models that consider more aspects of movies.
     </div>
     <div style="flex: 1;">
         {% include plots/04_cast_ols.html %}
