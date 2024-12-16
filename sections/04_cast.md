@@ -8,20 +8,20 @@ But how do these factors work together? What is the statistical relationship bet
 
 To assess the impact of cast composition on a movie's success, we delve into three key groups of metrics: Diversity, Fame, and Anagraphic. These metrics provide a comprehensive view of how diversity, experience, and anagraphic within the cast influence audience reception and popularity for each movie. Let’s explore each of these in detail.
 
-1. **Diversity Measures**<br>
- - **Number of Different Nationalities** (cast_country_count): Counts the unique nationalities represented in the cast. A higher count suggests a more internationally diverse ensemble.<br>
- - **Shannon Entropy of Nationalities** (cast_country_entropy): Measures the evenness of representation among different nationalities. High entropy indicates a balanced representation across multiple nationalities, rather than dominance by one or two.<br>
- - **Percentage of Females in the Cast** (female_score): Calculates the proportion of female members in the cast, reflecting gender representation.<br>
- - **Gender Balance Index** (gender_score): Measures how close the gender ratio is to parity (e.g., equal numbers of male and female cast members).<br>
+1. **Diversity Measures**
+ - **Number of Different Nationalities** (*cast_country_count*): Counts the unique nationalities represented in the cast. A higher count suggests a more internationally diverse ensemble.
+ - **Shannon Entropy of Nationalities** (*cast_country_entropy*): Measures the evenness of representation among different nationalities. High entropy indicates a balanced representation across multiple nationalities, rather than dominance by one or two.
+ - **Percentage of Females in the Cast** (*female_score*): Calculates the proportion of female members in the cast, reflecting gender representation.
+ - **Gender Balance Index** (*gender_score*): Measures how close the gender ratio is to parity (e.g., equal numbers of male and female cast members).
 
-2. **Fame Measures**<br>
- - **Maximum Number of Appearances by Actors** (actor_fame): Aggregates the number of other movies for all actors in the cast, focusing on the most experienced individual.<br>
- - **Maximum Number of Appearances by Director(s)** (director_fame_bool): Evaluates the director's experience by counting how many other movies he/she did. If there are multiple directors, the maximum value is used.<br>
- - **Presence of Experienced Actors or Directors (Boolean)** (actor_fame_bool and director_fame_bool): Indicate whether any actor or director in the cast has appeared in other movies. This binary metrics highlights whether the film benefits from at least one experienced professional.<br>
+2. **Fame Measures**
+ - **Maximum Number of Appearances by Actors** (*actor_fame*): Aggregates the number of other movies for all actors in the cast, focusing on the most experienced individual.
+ - **Maximum Number of Appearances by Director** (*director_fame_bool*): Evaluates the director's experience by counting how many other movies he/she did. If there are multiple directors, the maximum value is used.
+ - **Presence of Experienced Actors or Directors** (*actor_fame_bool* and *director_fame_bool*): Indicate whether any actor or director in the cast has appeared in other movies. This binary metrics highlights whether the film benefits from at least one experienced professional.
 
-3. Anagraphic Measures<br>
- - **Average Age of the Cast** (age_mean): Captures the mean age of the cast members.<br>
- - **Standard Deviation in Cast Age** (age_std): Measures the variation in age among cast members. This could also be classified as a diversity measure.
+3. Anagraphic Measures
+ - **Average Age of the Cast** (*age_mean*): Captures the mean age of the cast members.
+ - **Standard Deviation in Cast Age** (*age_std*): Measures the variation in age among cast members. This could also be classified as a diversity measure.
 
 <div style="display: flex; align-items: flex-start">
     <div style="flex: 1; margin-right: 10px;">
@@ -44,6 +44,3 @@ To assess the impact of cast composition on a movie's success, we delve into thr
 <div style="display: flex; justify-content: center; margin-top: -40px;">
     {% include plots/04_cast_stats_heatmap.html %}
 </div>
-
-["cast_country_count", "cast_country_entropy", "female_score", "gender_score", "age_mean", "age_std", "actor_fame",
-              "actor_fame_bool", "director_fame", "director_fame_bool"]
