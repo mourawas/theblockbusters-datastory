@@ -52,7 +52,9 @@ Here’s what we found:
 
 - Number of votes and budget: There was a strong positive correlation here as well, with a Pearson correlation value of 0.62 and a p-value of 0.00, suggesting that higher-budget movies attract more viewers and thus receive more ratings.
 
-#### GG PAIRS 
+<div style="display: flex; justify-content: center; margin-top: -40px;">
+    {% include plots/02_gg_pairs_plot.html %}
+</div>
 
 The analysis confirms some key intuitions. For example, the strong link between votes and revenues suggests that popularity plays a major role in a movie’s financial success. ROI, however, stands out as a different kind of metric. Its weaker correlations with votes and revenues reflect the fact that it’s more about efficiency than scale—it measures how much value was created relative to the budget, rather than how much money was made overall.
 
