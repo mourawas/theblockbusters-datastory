@@ -16,8 +16,3 @@ This research seeks to unravel these mysteries, examining whether success in fil
 
 So, is Tarantino right? Or does making a great movie require more than just love? Let’s dive in and uncover what truly goes into crafting a cinematic success.
 
-<img src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fthe-talks.com%2Finterview%2Fquentin-tarantino%2F&psig=AOvVaw3hGJkjeBqQGhYO1V5IOHIy&ust=1734524316052000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCKDvsd_krooDFQAAAAAdAAAAABAE" width="500" height="600">
-
-
-
-
