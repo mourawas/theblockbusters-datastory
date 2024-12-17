@@ -15,7 +15,14 @@ By unpacking these metrics, we hope to better understand the dynamics of what ma
 
 Initially, we plotted the variables to examine their distributions:
 
-<img src="images/density_subplots.png" alt="Skewed Distributions">
+<figure class="center">
+  <img src="./assets/img/density_subplots.png" alt = "Illustration of Kircher's Stenographic mirror" class = "center" width="300"> 
+   <figcaption>
+    Caption.
+   </figcaption>
+</figure>
+
+<img src="" alt="Skewed Distributions">
 
 As shown, the distributions for Revenue, ROI, Budget, and Number of Votes were skewed. To address this, we applied a logarithmic transformation. The resulting distributions are as follows:
 
