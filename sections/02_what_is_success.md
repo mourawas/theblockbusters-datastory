@@ -15,11 +15,11 @@ By unpacking these metrics, we hope to better understand the dynamics of what ma
 
 Initially, we plotted the variables to examine their distributions:
 
-<img src="/_includes/plots/02_initial_plot.svg"/>
+<img src="./_includes/plots/02_initial_plot.svg" alt="Skewed Distributions" width="350px" height="230px">
 
 As shown, the distributions for Revenue, ROI, Budget, and Number of Votes were skewed. To address this, we applied a logarithmic transformation. The resulting distributions are as follows:
 
-<img src="/_includes/plots/02_final_plot.svg.svg"/>
+<img src="./_includes/plots/02_final_plot.svg.svg" alt="Normal Distributions" width="350px" height="230px">
 
 To better understand the relationships between the factors we’re analyzing—number of votes, revenues, ROI, and budget—the first step was to create a scatter matrix. This gave us a visual overview of how these variables interact with each other. The scatter matrix revealed noticeable correlations between some variables, particularly revenues, number of votes, and budget. However, ROI stood out as being less consistently correlated with the others. To investigate further, we ran Pearson correlation tests to quantify these relationships and confirm their statistical significance.
 
