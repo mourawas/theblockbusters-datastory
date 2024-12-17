@@ -13,11 +13,9 @@ Success in the film industry isn’t one-dimensional; it’s a combination of fa
 
 By unpacking these metrics, we hope to better understand the dynamics of what makes a movie successful. Whether it’s a critically acclaimed masterpiece, a box office juggernaut, or a cultural phenomenon watched by millions, each metric contributes to the bigger picture of cinematic success.
 
-{% include images/density_subplots.png %}
-
 Initially, we plotted the variables to examine their distributions:
 
-<img src="_includes/images/density_subplots.png" alt="Skewed Distributions">
+<img src="images/density_subplots.png" alt="Skewed Distributions">
 
 As shown, the distributions for Revenue, ROI, Budget, and Number of Votes were skewed. To address this, we applied a logarithmic transformation. The resulting distributions are as follows:
 
