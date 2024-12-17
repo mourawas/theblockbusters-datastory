@@ -36,7 +36,7 @@ The scatter matrix revealed noticeable correlations between some variables, part
 Since we have much more reliable and complete information about popularity, measured as the logarithm of the number of votes, we will prioritize this metric to determine a movie's success. Popularity reflects audience engagement and the reach of a film, making it a practical and robust measure for our analysis. Additionally, its strong correlations with revenue and budget reinforce its suitability as a central indicator of success.
 
 
-#  The Return on Investment (ROI)
+####  The Return on Investment (ROI)
 
 ROI stood out as less consistently correlated with other metrics, to explore this further, it makes sense to examine ROI in the context of budget size.
 
@@ -52,5 +52,5 @@ Low-budget films often achieve higher ROI percentages due to lower costs and ris
 This division also raises interesting questions about production strategies and audience expectations. For instance, do certain genres perform better within specific budget ranges? Are there patterns in the types of films that succeed at different scales? Exploring these questions could reveal valuable insights into the complex interplay between budgets, revenues, and ROI.
 
 <figure class="center">
-  <img src="./assets/img/roi_meme.png" alt = "ROI Meme" class = "center" width="1000"> 
+  <img src="./assets/img/roi_meme.png" alt = "ROI Meme" class = "center" width="750"> 
 </figure>
