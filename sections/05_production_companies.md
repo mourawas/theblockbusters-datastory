@@ -1,9 +1,37 @@
 # Investigating the Role of Production Companies in Movie Popularity
 
-Next, we explore whether the production company influences the popularity of movies, where popularity is represented by the number of votes received. To approach this question, we measure the frequency of movies issued by each production company. This frequency serves as a proxy for the notoriety or prominence of a production company in the industry. The assumption is that more prolific production companies might be associated with higher average popularity for their movies.
+Next, we examine whether the production company has an impact on a movie's popularity, with popularity measured by the number of votes received. To investigate this, we analyze the frequency of movies produced by each company, using it as a proxy for the company's prominence or influence within the industry. The underlying assumption is that more prolific production companies may be linked to higher average popularity for their films.
 
-To visualize this relationship, we created a scatter plot. The x-axis represents the frequency (i.e., the number of movies produced by a company), while the y-axis shows the average popularity of each production company, calculated as the mean number of votes across all their movies.
+To begin, we visualized the Top 20 production companies based on the number of movies they have released. The results are as follows:
 
-From the scatter plot, there does not appear to be a clear or evident trend linking production frequency to average movie popularity. Production companies with higher frequencies do not consistently exhibit greater average popularity for their films. However, one notable observation is that the standard deviation of popularity narrows slightly as frequency increases. In other words, as production companies release more movies, the variability in their movies’ popularity tends to decrease. This suggests that more prolific production companies may produce movies with more consistent levels of popularity.
+<div style="display: flex; justify-content: center; margin-top: -40px;">
+    {% include plots/03_prod_companies_count.html %}
+</div>
 
-Despite this subtle pattern, the result does not appear statistically significant. The absence of a strong trend suggests that the sheer number of movies produced by a company is not a major determinant of the average popularity of its films.
+We observe that the movie industry is largely dominated by major production companies, which produce significantly more movies than others (e.g., Metro-Goldwyn-Mayer, Paramount, etc.).
+
+For the top ten production companies, we analyze the average popularity of their movies, measured as the logarithm of the number of ratings. To explore this, we use boxplots to visualize the distributions of popularity for each company's produced movies.
+
+<div style="display: flex; justify-content: center; margin-top: -40px;">
+    {% include plots/03_prod_companies_boxplots.html %}
+</div>
+
+Here, we do not observe any clear trend in popularity, as it appears that for the ten most productive companies, production volume does not heavily influence movie popularity.
+
+To further investigate, we will use a barplot to examine how popularity is distributed among the most "popular" production companies—those that produce movies with the highest average popularity.
+
+<div style="display: flex; justify-content: center; margin-top: -40px;">
+    {% include plots/03_prod_companies_barplots.html %}
+</div>
+
+Although the average popularity appears relatively stable for the first seven companies, the high variance observed for all of them prevents us from drawing any significant conclusions about a clear trend.
+
+To gain a broader perspective, we use a scatterplot to compare a company's importance—measured by the number of movies produced—with the average popularity of its movies, expressed as the logarithm of the number of ratings. Given the highly unbalanced distribution of company importance, we apply a logarithmic transformation for better visualization.
+
+<div style="display: flex; justify-content: center; margin-top: -40px;">
+    {% include plots/03_prod_companies_scatterplot.html %}
+</div>
+
+From the scatter plot, there is no clear trend linking production frequency to average movie popularity. However, variability in popularity tends to decrease as production frequency increases, suggesting that high-frequency companies produce movies with more stable popularity. In contrast, low-frequency companies show greater variability, possibly due to focusing on specific genres or producing a mix of successful and unpopular movies. This variability can be seen as a measure of the 'risk' of producing movies.
+
+However, after performing an F-test on the ratio of variances, the results do not support our intuition, as the p-value is nearly 100%. This indicates that there is no significant difference in the 'risk' associated with producing movies at high or low frequencies.
