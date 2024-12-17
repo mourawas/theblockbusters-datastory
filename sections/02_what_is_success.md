@@ -25,39 +25,26 @@ As shown, the distributions for Revenue, ROI, Budget, and Number of Votes were s
   <img src="./assets/img/log_transformed_density_subplots.png" alt = "Illustration of Kircher's Stenographic mirror" class = "center" width="1000"> 
 </figure>
 
-To better understand the relationships between the factors we’re analyzing—number of votes, revenues, ROI, and budget—the first step was to create a scatter matrix. This gave us a visual overview of how these variables interact with each other. The scatter matrix revealed noticeable correlations between some variables, particularly revenues, number of votes, and budget. However, ROI stood out as being less consistently correlated with the others. To investigate further, we ran Pearson correlation tests to quantify these relationships and confirm their statistical significance.
+To better understand the relationships between the factors we’re analyzing the first step was to create a scatter matrix. This gave us a visual overview of how these variables interact with each other. 
 
-Here’s what we found:
 
-<div style="display: flex; justify-content: center; margin-top: -40px;">
-    {% include plots/02_gg_pairs_plot.html %}
-</div>
+## DISPLAY GG-PAIRS HERE (Francesco)
 
-The analysis confirms some key intuitions. For example, the strong link between votes and revenues suggests that popularity plays a major role in a movie’s financial success. ROI, however, stands out as a different kind of metric. Its weaker correlations with votes and revenues reflect the fact that it’s more about efficiency than scale—it measures how much value was created relative to the budget, rather than how much money was made overall.
-
-The negative correlation between ROI and budget is especially interesting. Smaller-budget films often achieve higher ROI percentages because they require less money to turn a profit. However, this doesn’t mean these films are more lucrative overall. High-budget movies, while less efficient in terms of ROI, tend to generate far larger absolute revenues and profits. This creates an intriguing dynamic: smaller films succeed by being efficient, while bigger productions succeed through scale.
+The scatter matrix revealed noticeable correlations between some variables, particularly revenues, number of votes, budget and ratings. However, ROI stood out as being less consistently correlated with the others. 
 
 Since we have much more reliable and complete information about popularity, measured as the logarithm of the number of votes, we will prioritize this metric to determine a movie's success. Popularity reflects audience engagement and the reach of a film, making it a practical and robust measure for our analysis. Additionally, its strong correlations with revenue and budget reinforce its suitability as a central indicator of success.
 
 
-#  Closer Look at ROI and Budget
-To explore the ROI further, it may be helpful to divide movies into two groups: low-budget and high-budget. By analyzing these categories separately, we can better understand how ROI behaves in each group. Initial findings suggest that low-budget films tend to achieve disproportionately high ROI percentages, while high-budget movies deliver larger profits overall but with lower efficiency. This makes sense—smaller productions have less at stake and fewer costs to recoup, while blockbuster films invest heavily in scale and marketing to drive massive revenues.
+#  The Return on Investment (ROI)
+
+ROI stood out as less consistently correlated with other metrics, to explore this further, it makes sense to examine ROI in the context of budget size.
+
+Dividing movies into low-budget and high-budget categories reveals key differences in ROI. To visualize this, we plotted ROI using different colors to distinguish between high-budget and low-budget movies:
+
+<div style="display: flex; justify-content: center; margin-top: -40px;">
+    {% include plots/03_ROI_highvslow_bidget.html %}
+</div>
+
+Low-budget films often achieve higher ROI percentages due to lower costs and risks, while high-budget movies generate larger overall profits despite lower efficiency. This reflects the tradeoff: smaller productions focus on efficiency, while blockbusters rely on scale and heavy investments to maximize revenue.
 
 This division also raises interesting questions about production strategies and audience expectations. For instance, do certain genres perform better within specific budget ranges? Are there patterns in the types of films that succeed at different scales? Exploring these questions could reveal valuable insights into the complex interplay between budgets, revenues, and ROI.
-
-By examining these dynamics in more detail, we can start to build a clearer picture of what drives success for movies of different types and sizes. This layered approach will help us better understand the broader patterns behind a movie’s financial and overall performance.
-
-#### DISPLAY THE INTERACTIVE GRAPH HERE
-
-
---------------------------------------------------------------------------------------------------------------
-#### UNDERSTAND WHERE TO INCLUDE:
-
-Once transformed, we discovered a correlation of 0.67 between the number of votes and revenues. This indicates a significant linear relationship between these two variables and suggests a potential solution to the problem of missing revenue values in our dataset. The strong correlation implies that as the number of ratings increases, the revenue of a movie tends to rise proportionally.
-
-PLOT SCATTER PLOT (+ REGRESSION LINE)
-
-This finding aligns with intuition: the more ratings a movie receives, the greater its audience engagement and viewership, which directly contribute to its box office or streaming earnings. By analyzing these variables in their logarithmic forms, this relationship becomes even clearer and more mathematically robust, further supporting the validity of this approach.
-
-Given this correlation, at first, we thought about using a linear regression model with the number of ratings as the predictor variable to estimate missing revenue values. This approach capitalizes on the strong relationship between the two variables, enabling us to recover incomplete data. By filling in the gaps in revenue data, we can ensure a more comprehensive and accurate analysis of the factors driving a movie’s financial and overall success. However, as the analysis shows, the forecast of the revenues is not necessary.
--------------------------------------------------------------------------------------------------------------------
