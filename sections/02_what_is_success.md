@@ -41,6 +41,8 @@ ROI stood out as less consistently correlated with other metrics, to explore thi
 
 Dividing movies into low-budget and high-budget categories reveals key differences in ROI. To visualize this, we plotted ROI using different colors to distinguish between high-budget and low-budget movies:
 
+<br>
+<br>
 <div style="display: flex; justify-content: center; margin-top: -40px;">
     {% include plots/03_ROI_highvslow_bidget.html %}
 </div>
