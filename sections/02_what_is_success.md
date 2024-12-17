@@ -8,18 +8,18 @@ Success in the film industry isn’t one-dimensional; it’s a combination of fa
   <li><b>Ratings:</b> High ratings reflect audience approval, showcasing engaging stories, strong performances, or stunning visuals. However, ratings alone don’t tell the full story—some critically acclaimed films remain niche, while others with average scores achieve massive success.</li>
   <li><b>Popularity:</b> Measured by the number of ratings, popularity indicates how many people watched the movie and cared enough to respond. Even if a film doesn’t earn top reviews, attracting a large audience highlights its broad appeal and cultural impact.</li>
   <li><b>Revenue:</b> Whether from box office earnings or streaming platforms, is a clear measure of commercial success. However, revenue doesn’t account for production costs, which is where ROI comes in.</li>
-  </li><b>ROI:</b> Measures how efficiently a movie turns its budget into profit. For example, an ROI of 300% means the film earned three times its cost. While ROI data can be incomplete, it remains essential for assessing financial success.</li>
+  <li><b>ROI:</b> Measures how efficiently a movie turns its budget into profit. For example, an ROI of 300% means the film earned three times its cost. While ROI data can be incomplete, it remains essential for assessing financial success.</li>
 </ul>
 
 By unpacking these metrics, we hope to better understand the dynamics of what makes a movie successful. Whether it’s a critically acclaimed masterpiece, a box office juggernaut, or a cultural phenomenon watched by millions, each metric contributes to the bigger picture of cinematic success.
 
 Initially, we plotted the variables to examine their distributions:
 
-<img src="../_includes/plots/02_initial_plot.svg" alt="Skewed Distributions" width="350px" height="230px"/>
+<img src="../_includes/images/density_subplots.png" alt="Skewed Distributions">
 
 As shown, the distributions for Revenue, ROI, Budget, and Number of Votes were skewed. To address this, we applied a logarithmic transformation. The resulting distributions are as follows:
 
-<img src="../_includes/plots/02_final_plot.svg" alt="Normal Distributions" width="350px" height="230px"/>
+<img src="../_includes/images/log_transformed_density_subplots.png" alt="Normal Distributions">
 
 To better understand the relationships between the factors we’re analyzing—number of votes, revenues, ROI, and budget—the first step was to create a scatter matrix. This gave us a visual overview of how these variables interact with each other. The scatter matrix revealed noticeable correlations between some variables, particularly revenues, number of votes, and budget. However, ROI stood out as being less consistently correlated with the others. To investigate further, we ran Pearson correlation tests to quantify these relationships and confirm their statistical significance.
 
