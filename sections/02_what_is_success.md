@@ -17,19 +17,19 @@ By unpacking these metrics, we hope to better understand the dynamics of what ma
 The ROI was calculated as the ratio of the logarithm of revenue to the logarithm of the budget. This transformation was necessary because the distributions of votes, budget, and revenue were skewed, as shown in the plot below. The same transformation was applied to ROI after its calculation, as it also exhibited skewness.
 
 <figure class="center">
-  <img src="./assets/img/density_subplots.png" alt = "Illustration of Kircher's Stenographic mirror" class = "center" width="1000"> 
+  <img src="./assets/img/density_subplots.png" class = "center" width="1000"> 
 </figure>
 
 To address this, we applied a logarithmic transformation. The resulting distributions are as follows:
 
 <figure class="center">
-  <img src="./assets/img/log_transformed_density_subplots.png" alt = "Illustration of Kircher's Stenographic mirror" class = "center" width="1000"> 
+  <img src="./assets/img/log_transformed_density_subplots.png" class = "center" width="1000"> 
 </figure>
 
 To understand further the relationships between the factors we’re analyzing, the first step was to create a scatter matrix. This gave us a visual overview of how these variables interact with each other. 
 
 <figure class="center">
-  <img src="./assets/img/01GGpairs.png" alt = "Illustration of Kircher's Stenographic mirror" class = "center" width="1000"> 
+  <img src="./assets/img/01GGpairs.png" class = "center" width="1000"> 
 </figure>
 
 The scatter matrix revealed noticeable correlations between some variables, particularly revenues, number of votes, budget and ratings. However, ROI stood out as being less consistently correlated with the others. 
