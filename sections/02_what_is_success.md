@@ -28,8 +28,9 @@ To address this, we applied a logarithmic transformation. The resulting distribu
 
 To understand further the relationships between the factors we’re analyzing, the first step was to create a scatter matrix. This gave us a visual overview of how these variables interact with each other. 
 
-
-#### DISPLAY GG-PAIRS HERE (Francesco)
+<figure class="center">
+  <img src="./assets/img/01GGpairs.png" alt = "Illustration of Kircher's Stenographic mirror" class = "center" width="1000"> 
+</figure>
 
 The scatter matrix revealed noticeable correlations between some variables, particularly revenues, number of votes, budget and ratings. However, ROI stood out as being less consistently correlated with the others. 
 
