@@ -44,7 +44,7 @@ Dividing movies into low-budget and high-budget categories reveals key differenc
 
 <br>
 <div style="display: flex; justify-content: center; margin-top: -40px;">
-    {% include plots/03_ROI_highvslow_bidget.html %}
+    {% include plots/02_ROI_highvslow_budget.html %}
 </div>
 
 Low-budget films often achieve higher ROI percentages due to lower costs and risks, while high-budget movies generate larger overall profits despite lower efficiency. This reflects the tradeoff: smaller productions focus on efficiency, while blockbusters rely on scale and heavy investments to maximize revenue.

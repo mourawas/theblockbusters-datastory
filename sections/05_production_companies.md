@@ -6,7 +6,7 @@ To begin, we visualized the Top 20 production companies based on the number of m
 
 <br>
 <div style="display: flex; justify-content: center; margin-top: -40px;">
-    {% include plots/03_prod_companies_count.html %}
+    {% include plots/04_prod_companies_count.html %}
 </div>
 
 We observe that the movie industry is largely dominated by major production companies, which produce significantly more movies than others (e.g., Metro-Goldwyn-Mayer, Paramount, etc.).
@@ -15,7 +15,7 @@ For the top ten production companies, we analyze the average popularity of their
 
 <br>
 <div style="display: flex; justify-content: center; margin-top: -40px;">
-    {% include plots/03_prod_companies_boxplots.html %}
+    {% include plots/04_prod_companies_boxplots.html %}
 </div>
 
 Here, we do not observe any clear trend in popularity, as it appears that for the ten most productive companies, production volume does not heavily influence movie popularity.
@@ -24,7 +24,7 @@ To further investigate, we will use a barplot to examine how popularity is distr
 
 <br>
 <div style="display: flex; justify-content: center; margin-top: -40px;">
-    {% include plots/03_prod_companies_barplots.html %}
+    {% include plots/04_prod_companies_barplots.html %}
 </div>
 
 Although the average popularity appears relatively stable for the first seven companies, the high variance observed for all of them prevents us from drawing any significant conclusions about a clear trend.
@@ -33,7 +33,7 @@ To gain a broader perspective, we use a scatterplot to compare a company's impor
 
 <br>
 <div style="display: flex; justify-content: center; margin-top: -40px;">
-    {% include plots/03_prod_companies_scatterplot.html %}
+    {% include plots/04_companies_frequency_popularity.html %}
 </div>
 
 From the scatter plot, there is no clear trend linking production frequency to average movie popularity. However, variability in popularity tends to decrease as production frequency increases, suggesting that high-frequency companies produce movies with more stable popularity. In contrast, low-frequency companies show greater variability, possibly due to focusing on specific genres or producing a mix of successful and unpopular movies. This variability can be seen as a measure of the 'risk' of producing movies.
