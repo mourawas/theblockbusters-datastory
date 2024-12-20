@@ -13,44 +13,41 @@ Success in the film industry isn’t one-dimensional; it’s a combination of fa
 
 By unpacking these metrics, we hope to better understand the dynamics of what makes a movie successful. Whether it’s a critically acclaimed masterpiece, a box office juggernaut, or a cultural phenomenon watched by millions, each metric contributes to the bigger picture of cinematic success.
 
-
-The ROI was calculated as the ratio of the logarithm of revenue to the logarithm of the budget. This transformation was necessary because the distributions of votes, budget, and revenue were skewed, as shown in the plot below. The same transformation was applied to ROI after its calculation, as it also exhibited skewness.
+All success metric have been converted in logarithmic form before starting the analysis. This transformation was necessary because the distributions of votes, budget, revenue, and ROI were very skewed and difficult to work with. The plots here below shows the distribution of the metrics before the transformation.
 
 <figure class="center">
   <img src="./assets/img/density_subplots.png" class = "center" width="1000"> 
 </figure>
 
-To address this, we applied a logarithmic transformation. The resulting distributions are as follows:
+After applying the logarithmic transformation we obtain the following plots.
 
 <figure class="center">
   <img src="./assets/img/log_transformed_density_subplots.png" class = "center" width="1000"> 
 </figure>
 
-To understand further the relationships between the factors we’re analyzing, the first step was to create a scatter matrix. This gave us a visual overview of how these variables interact with each other. 
+To understand further the relationships between the factors we’re analyzing, the first step was to create a scatter matrix. This gives us a visual overview of how these variables interact with each other. 
 
 <figure class="center">
   <img src="./assets/img/01GGpairs.png" class = "center" width="1000"> 
 </figure>
 
-The scatter matrix revealed noticeable correlations between some variables, particularly revenues, number of votes, budget and ratings. However, ROI stood out as being less consistently correlated with the others. 
+The scatter matrix reveals noticeable correlations between some variables. In particular revenues, number of votes, and ratings seem to be highly correlated and likely deliver the same information about the movie. On the other hand, the ROI stood out for being less consistently correlated with the other metrics. 
 
-Since we have much more reliable and complete information about popularity, measured as the logarithm of the number of votes, we will prioritize this metric to determine a movie's success. Popularity reflects audience engagement and the reach of a film, making it a practical and robust measure for our analysis. Additionally, its strong correlations with revenue and budget reinforce its suitability as a central indicator of success.
+Since we have much more reliable and complete information about popularity, that we define as the logarithm of the number of votes, we will use this metric to determine a movie's success. Popularity reflects audience engagement and the reach of a film, making it a practical and robust measure for our analysis. Additionally, its strong correlations with revenue and budget reinforce its suitability as a central indicator of success.
 
 
 #  A small detour: the Return on Investment (ROI)
 
-ROI stood out as less consistently correlated with other metrics, to explore this further, it makes sense to examine ROI in the context of budget size.
+Since ROI stood out for not being correlated with other metrics, we explore this aspect a bit further, before continuing with our analysis. In particular we examine the ROI in the context of budget size.
 
-Dividing movies into low-budget and high-budget categories reveals key differences in ROI. To visualize this, we plotted ROI using different colors to distinguish between high-budget and low-budget movies:
+Dividing movies into low-budget and high-budget categories reveals key differences in term of ROI. To visualize this, we plotted the ROI against the budget using different colors to distinguish between high-budget and low-budget movies.
 
 <br>
 <div style="display: flex; justify-content: center; margin-top: -40px;">
     {% include plots/02_ROI_highvslow_budget.html %}
 </div>
 
-Low-budget films often achieve higher ROI percentages due to lower costs and risks, while high-budget movies generate larger overall profits despite lower efficiency. This reflects the tradeoff: smaller productions focus on efficiency, while blockbusters rely on scale and heavy investments to maximize revenue.
-
-This division also raises interesting questions about production strategies and audience expectations. For instance, do certain genres perform better within specific budget ranges? Are there patterns in the types of films that succeed at different scales? Exploring these questions could reveal valuable insights into the complex interplay between budgets, revenues, and ROI.
+Low-budget films often achieve higher ROI percentages due to lower costs, while high-budget movies generate larger overall profits despite lower efficiency. This reflects the tradeoff: smaller productions focus on efficiency, while blockbusters rely on scale and heavy investments to maximize revenue.
 
 <figure class="center">
   <img src="./assets/img/9e3ek0.jpg" alt = "ROI Meme" class = "center" width="500"> 
