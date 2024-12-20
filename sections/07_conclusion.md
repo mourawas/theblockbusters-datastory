@@ -11,9 +11,5 @@ What does this all mean for filmmakers and industry insiders? The findings sugge
 So while love for movies might be the spark, it’s clear that crafting a blockbuster is also about mastering the recipe—budget, diversity, genre, and more. With this understanding, filmmakers can move closer to their dream of not just making good movies but creating ones that truly resonate with audiences worldwide.
 
 <figure class="center">
-  <img src="./assets/img/GRANDE GATSBY (DiCaprio).jpg" class = "center" width="1000"> 
+  <img src="./assets/img/GRANDE GATSBY (DiCaprio).jpeg" class = "center" width="1000"> 
 </figure>
-
-
-
-
