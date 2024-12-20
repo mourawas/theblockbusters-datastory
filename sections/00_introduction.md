@@ -1,4 +1,4 @@
-# Intro
+# Introduction
 
 Did you know that the film and television industry contributes over $504 billion to the U.S. economy each year, providing jobs for more than 2.5 million people? 
 
