@@ -13,7 +13,7 @@ For both models we focussed on the following covatiates:
 
 As for the dependent variable, we classified movies into low success and high success groups based on average popularity. This binary classification allowed us to clearly delineate between blockbusters and less successful films.
 
-We split the dataset into a training set and a test set, trained the model on the training, and evaluated its performance on the test set. The results are very encouraging: the decision tree achieved an accuracy of 79% on the test set with only 5 levels, proving to be really good at recognising real blockbusters.
+We split the dataset into a training set and a test set, trained the model on the training set, and evaluated its performance on the test set. The results are very encouraging: the decision tree achieved an accuracy of 79% on the test set with only 5 levels, proving to be really good at recognising real blockbusters.
 
 So let’s dive into the details and see what our models have to say about what truly makes a movie successful. The plot below illustrates the first three layers of the decison three.
 <figure class="center">
@@ -21,7 +21,9 @@ So let’s dive into the details and see what our models have to say about what 
 </figure>
 If we examine the tree, we notice that the most important variable for predicting a movie’s popularity is its budget. The decision tree uses budget as the primary discriminator for all the first two levels of depth. This finding is intuitive: larger budgets often mean better production quality, higher-profile marketing, and greater audience appeal. The more a production invests, the more likely it is to attract viewers.
 
-The next significant factor is the country of production. As seen throughout our analysis, being produced in the USA remains a major advantage for a movie. The American film industry’s global reach, resources, and established audience base make it a critical factor for success. Finally, the decision tree highlights the impact of genre, with thrillers standing out as a particularly influential genre.
+The next most significant factors are *std_age* (the standard deviation of cast age) and *cast_country_count* (the number of nationalities within the cast). This reinforces the idea that internationally diverse casts resonate better with global audiences, while a wider age range increases a movie’s appeal across different generations.
+
+Finally, the decision tree highlights the impact of genre, with thrillers and family movie standing out as particularly influential genres.
 
 Using the same set of covariates, we built an OLS regression model to predict movie popularity as a continuous variable. To make the results more interpretable, we normalized all numeric covariates, such as log budget and cast statistics. This ensured that the coefficients represented the relative impact of each variable on movie popularity, measured on a comparable scale.
 
@@ -31,7 +33,7 @@ The results are visualized in the plot below, which shows the regression coeffic
     {% include plots/05_complete_ols.html %}
 </div>
 
-As in the decision tree, the budget stands out as the most significant factor influencing a movie's popularity. The large positive coefficient reinforces the idea that bigger budgets lead to higher-quality movies and wider audience reach. The *cast_country_count variable*, which measures the diversity of a movie's cast in terms of their countries of origin, also plays a key role. This reflects how an internationally diverse cast can broaden a movie's appeal across global markets.
+As in the decision tree, the budget stands out as the most significant factor influencing a movie's popularity. The large positive coefficient reinforces the idea that bigger budgets lead to higher-quality movies and wider audience reach.
 
 Another notable factor is cast diversity, measured by the *cast_country_count* variable. This metric reflects the variety of countries represented in a movie’s cast. The positive impact of this variable indicates that a diverse cast broadens a movie’s appeal, particularly in global markets, where representation and relatability play key roles in attracting audiences.
 
