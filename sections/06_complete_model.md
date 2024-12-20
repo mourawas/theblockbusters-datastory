@@ -5,11 +5,11 @@ What makes a movie a blockbuster? In this final chapter we will finally try to g
 To do so, we’ll take a two-step approach. First, we’ll try to answer this question using a decision tree model. This is because decision trees are great at giving us an intuitive, easy-to-interpret picture of how different factors interact and contribute to a movie’s success. Then, we’ll move to a more traditional OLS regression model, which will give us a detailed, quantitative breakdown of how each covariate contributes to a movie’s performance.
 
 For both models we focussed on the following covatiates:
-- Log Budget.
-- Countries: only those that produced at least 50 movies, as above.
-- Genres.
-- Cast statistics: only the ones that we discovered to be relevant, so *cast_country_count*, *age_std*, *actor_fame_bool*, and *director_fame_bool*.
-- Production companies: we included only companies that produced at least 70 movies. This way, we avoided overfitting with smaller players.
+- **Log Budget**.
+- **Countries**: only those that produced at least 50 movies, as above.
+- **Genres**.
+- **Cast statistics**: only the ones that we discovered to be relevant, so *cast_country_count*, *age_std*, *actor_fame_bool*, and *director_fame_bool*.
+- **Production companies**: we included only companies that produced at least 70 movies. This way, we avoided overfitting with smaller players.
 
 As for the dependent variable, we classified movies into low success and high success groups based on average popularity. This binary classification allowed us to clearly delineate between blockbusters and less successful films.
 
@@ -33,7 +33,7 @@ The results are visualized in the plot below, which shows the regression coeffic
 
 As in the decision tree, the budget stands out as the most significant factor influencing a movie's popularity. The large positive coefficient reinforces the idea that bigger budgets lead to higher-quality movies and wider audience reach. The *cast_country_count variable*, which measures the diversity of a movie's cast in terms of their countries of origin, also plays a key role. This reflects how an internationally diverse cast can broaden a movie's appeal across global markets.
 
-Another notable factor is cast diversity, measured by the cast_country_count variable. This metric reflects the variety of countries represented in a movie’s cast. The positive impact of this variable indicates that a diverse cast broadens a movie’s appeal, particularly in global markets, where representation and relatability play key roles in attracting audiences.
+Another notable factor is cast diversity, measured by the *cast_country_count* variable. This metric reflects the variety of countries represented in a movie’s cast. The positive impact of this variable indicates that a diverse cast broadens a movie’s appeal, particularly in global markets, where representation and relatability play key roles in attracting audiences.
 
 Production companies also emerge as important contributors to movie success. Established players like Paramount Pictures, Columbia Pictures, and United Artists are associated with strong positive coefficients. These findings underscore the advantage of working with experienced studios that have the resources, networks, and expertise to consistently produce good movies. The influence of genres also aligns with expectations: genres such as sci-fi, horror, and thrillers are significant predictors of popularity. 
 
