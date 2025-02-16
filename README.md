@@ -39,11 +39,9 @@ We incorporated data from three major sources:
    - 📜 **Description:** Offers comprehensive movie attributes such as ratings, number of ratings, and cast details.  
    - 📌 **Source:** IMDB Non-Commercial Datasets.  
    - 🔢 **Size:** Too large to fit into memory, so we preprocessed and filtered relevant movie entries.  
-   - 📝 **Preprocessing Code:** [`src/scripts/imbd_dataset_filtering.ipynb`](src/scripts/imbd_dataset_filtering.ipynb)  
 
 ### **3️⃣ Wikidata**  
    - 📜 **Description:** We built a script using Wikidata Query Service to automatically retrieve extensive metadata on movies and cast members.  
-   - 📝 **Preprocessing Code:** [`src/scripts/scrape_wikidata.ipynb`](src/scripts/scrape_wikidata.ipynb)  
 
 ---
 
