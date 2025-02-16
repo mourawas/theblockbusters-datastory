@@ -2,7 +2,7 @@
 
 This project is a **data-driven exploration of the movie industry**, visualized through an interactive web story.
 
-🔗 **Live Website:** [The Blockbusters](https://ferioliste.github.io/theblockbusters-datastory/)  
+🔗 **Live Website:** [The Blockbusters](https://mourawas.github.io/theblockbusters-datastory/)  
 📊 **Data Analysis:** Conducted in a separate repository (not publicly available).  
 
 ---
